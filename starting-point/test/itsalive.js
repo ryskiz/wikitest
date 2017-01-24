@@ -8,17 +8,17 @@ describe('Testing suit capabilities', function(){
         expect(2+2).to.equal(4);
     })
 });
-describe('setTimeout check', function(){
-    it('confirms that setTimeout is exactly 1000 milliseconds', function(done){
-
-        var start = new Date();
-        setTimeout(function () {
-            var duration = new Date() - start;
-            expect(duration).to.be.closeTo(1000, 50);
-            done();
-        }, 1000);
-    })
-});
+// describe('setTimeout check', function(){
+//     it('confirms that setTimeout is exactly 1000 milliseconds', function(done){
+//
+//         var start = new Date();
+//         setTimeout(function () {
+//             var duration = new Date() - start;
+//             expect(duration).to.be.closeTo(1000, 50);
+//             done();
+//         }, 1000);
+//     })
+// });
 describe('forEach count,', function(){
     it('counts the amount of times the callback was called', function(){
         function fn(i){
